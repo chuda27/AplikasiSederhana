@@ -37,12 +37,24 @@ public class KalkulatorActivity extends AppCompatActivity {
     }
 
     public void actionMinus(View view) {
+        double angka1 = Double.parseDouble(edtAngka1.getText().toString());
+        double angka2 = Double.parseDouble(edtAngka2.getText().toString());
+        double hasil = angka1 - angka2;
+        txtHasil.setText(String.valueOf(hasil));
     }
 
     public void actionBagi(View view) {
+        double angka1 = Double.parseDouble(edtAngka1.getText().toString());
+        double angka2 = Double.parseDouble(edtAngka2.getText().toString());
+        double hasil = angka1 / angka2;
+        txtHasil.setText(String.valueOf(hasil));
     }
 
     public void actionKali(View view) {
+        double angka1 = Double.parseDouble(edtAngka1.getText().toString());
+        double angka2 = Double.parseDouble(edtAngka2.getText().toString());
+        double hasil = angka1 * angka2;
+        txtHasil.setText(String.valueOf(hasil));
     }
 
     public void actionBersihkan(View view) {
